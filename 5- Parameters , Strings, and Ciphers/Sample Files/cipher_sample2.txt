@@ -1,0 +1,90 @@
+This program demonstrates a transposition cipher.
+A cipher is an algorithm to encrypt or decrypt a message.
+
+This program will demonstrate encrypting a message with
+a columnar transposition cipher both with and without
+padding characters. The program will then decrypt a message
+assuming it was encrypted with a columnar transposition cipher
+with padding.
+After accepting user input, the program displays some tests.
+
+
+A demonstration of encrypting with a columnar transposition cipher:
+
+Enter the message to encrypt: Exam 1 in CS312 is tomorrow, Wednesday, October 1. Yikes!
+
+Message encrypted with columnar transposition cipher and no padding.
+Encrypted with 2 rows: Ea  nC32i oorw ensa,Otbr1 ie!xm1i S1 stmro,Wdedy coe .Yks
+Encrypted with 3 rows: Em  3  mr,eea te1Yex iC1itoo dsyOor.isa1nS2sorwWnd,cb  k!
+Encrypted with 4 rows: E n3ior naOb1i!x1 1smoWeyce.ka C2 owes,tr emiS tr,dd o Ys
+Encrypted with 5 rows: E1C ooedOe sx SimwdacrY!ai3so,nyt imn1 r e,o1k  2trWs b.e
+Encrypted with 6 rows: E 3 reat1exi1todyo.san2own,b !m  m,e eY Cio sOri1SsrWdc k
+Encrypted with 7 rows: Ei2m dt.!xn oWao a ireybYmCsrd,ei S on rk13tweO e 1o,sc1s
+Encrypted with 8 rows: EnirnO1!x soec.aC wst mSt,doY 3o abi11mWyek 2oe,rei rd  s
+Encrypted with 9 rows: E  ,aeexCt yrsaSoW, !m3me 1 1odO.12rnc   retYiiosoinswdbk
+Encrypted with 10 rows: ECoeO xSmdcYa3ontim1reok 2rsbe1 odes iwar!is,y n  ,1 tW .
+
+Message encrypted with columnar transposition cipher and padding.
+
+Clear text padded for 2 rows: Exam 1 in CS312 is tomorrow, Wednesday, October 1. Yikes!X
+Encrypted with 2 rows: Ea  nC32i oorw ensa,Otbr1 ie!xm1i S1 stmro,Wdedy coe .YksX
+
+Clear text padded for 3 rows: Exam 1 in CS312 is tomorrow, Wednesday, October 1. Yikes!
+Encrypted with 3 rows: Em  3  mr,eea te1Yex iC1itoo dsyOor.isa1nS2sorwWnd,cb  k!
+
+Clear text padded for 4 rows: Exam 1 in CS312 is tomorrow, Wednesday, October 1. Yikes!XXX
+Encrypted with 4 rows: E n3ior naOb1i!x1 1smoWeyce.kXa C2 owes,tr eXmiS tr,dd o YsX
+
+Clear text padded for 5 rows: Exam 1 in CS312 is tomorrow, Wednesday, October 1. Yikes!XXX
+Encrypted with 5 rows: E1C ooedOe sx SimwdacrY!ai3so,nyt iXmn1 r e,o1kX  2trWs b.eX
+
+Clear text padded for 6 rows: Exam 1 in CS312 is tomorrow, Wednesday, October 1. Yikes!XXX
+Encrypted with 6 rows: E 3 reat1exi1todyo.san2own,b !m  m,e eYX Cio sOriX1SsrWdc kX
+
+Clear text padded for 7 rows: Exam 1 in CS312 is tomorrow, Wednesday, October 1. Yikes!XXXXXX
+Encrypted with 7 rows: Ei2m dt.!xn oWao Xa ireybYXmCsrd,eiX S on rkX13tweO eX 1o,sc1sX
+
+Clear text padded for 8 rows: Exam 1 in CS312 is tomorrow, Wednesday, October 1. Yikes!XXXXXXX
+Encrypted with 8 rows: EnirnO1!x soec.XaC wst XmSt,doYX 3o abiX11mWyekX 2oe,reXi rd  sX
+
+Clear text padded for 9 rows: Exam 1 in CS312 is tomorrow, Wednesday, October 1. Yikes!XXXXXX
+Encrypted with 9 rows: E  ,aeexCt yrsaSoW, !m3me 1X 1odO.X12rnc X  retYXiiosoiXnswdbkX
+
+Clear text padded for 10 rows: Exam 1 in CS312 is tomorrow, Wednesday, October 1. Yikes!XXX
+Encrypted with 10 rows: ECoeO xSmdcYa3ontim1reok 2rsbe1 odes iwar!is,y Xn  ,1X tW .X
+
+
+A demonstration of decrypting with a columnar transposition cipher:
+If the length of the message is not a multiple of the number of rows
+it will be padded which may throw off the decryption.
+
+Enter the message to decrypt: Ag  eroAtkeiChe nLinygfsdo e ?utsw? ote?
+
+Messages Decrypted with a Columnar Transposition Cipher
+
+Decrypted text padded for 2 rows: Ag  eroAtkeiChe nLinygfsdo e ?utsw? ote?
+Decrypted with 2 rows: Aygg f sedroo Aet k?euitCshwe?  noLtien?
+
+Decrypted text padded for 3 rows: Ag  eroAtkeiChe nLinygfsdo e ?utsw? ote?XX
+Decrypted with 3 rows: Ae g ? nu Lteisrnwoy?Ag tfokstedeio?C XheX
+
+Decrypted text padded for 4 rows: Ag  eroAtkeiChe nLinygfsdo e ?utsw? ote?
+Decrypted with 4 rows: Aeyugigt Cfs hsweed?r o on oALetti ekn??
+
+Decrypted text padded for 5 rows: Ag  eroAtkeiChe nLinygfsdo e ?utsw? ote?
+Decrypted with 5 rows: AtndsgkLow ei ? ine eCy orhg?toefueA st?
+
+Decrypted text padded for 6 rows: Ag  eroAtkeiChe nLinygfsdo e ?utsw? ote?XX
+Decrypted with 6 rows: AAeg  gt f?o knsut eLdteeiios?rCn wXohye?X
+
+Decrypted text padded for 7 rows: Ag  eroAtkeiChe nLinygfsdo e ?utsw? ote?XX
+Decrypted with 7 rows: AoCiduogAhnott tey se k gew?eenf ?XriLs? X
+
+Decrypted text padded for 8 rows: Ag  eroAtkeiChe nLinygfsdo e ?utsw? ote?
+Decrypted with 8 rows: Are you going to ACLfest this weekend???
+
+Decrypted text padded for 9 rows: Ag  eroAtkeiChe nLinygfsdo e ?utsw? ote?XXXXX
+Decrypted with 9 rows: Are you Xgoing toX ACLfestX this weXekend???X
+
+Decrypted text padded for 10 rows: Ag  eroAtkeiChe nLinygfsdo e ?utsw? ote?
+Decrypted with 10 rows: AetCnyd sogrkhLgo?wt oeeif u?e Ai nset ?

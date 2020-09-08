@@ -1,0 +1,90 @@
+This program demonstrates a transposition cipher.
+A cipher is an algorithm to encrypt or decrypt a message.
+
+This program will demonstrate encrypting a message with
+a columnar transposition cipher both with and without
+padding characters. The program will then decrypt a message
+assuming it was encrypted with a columnar transposition cipher
+with padding.
+After accepting user input, the program displays some tests.
+
+
+A demonstration of encrypting with a columnar transposition cipher:
+
+Enter the message to encrypt: is it time to go yet?
+
+Message encrypted with columnar transposition cipher and no padding.
+Encrypted with 2 rows: i ttm og e?si iet oyt
+Encrypted with 3 rows: iiteooesti   t  mtgy?
+Encrypted with 4 rows: itmo ?s e y t geiitot
+Encrypted with 5 rows: i  o?stt  ioyim etegt
+Encrypted with 6 rows: itoesi t mg?ieot   ty
+Encrypted with 7 rows: iigsmo e i ytte ott ?
+Encrypted with 8 rows: im sey  eittto?  tgio
+Encrypted with 9 rows: iees t t?iot  gtoi my
+Encrypted with 10 rows: i ?st oi tg ot iymeet
+
+Message encrypted with columnar transposition cipher and padding.
+
+Clear text padded for 2 rows: is it time to go yet?X
+Encrypted with 2 rows: i ttm og e?si iet oytX
+
+Clear text padded for 3 rows: is it time to go yet?
+Encrypted with 3 rows: iiteooesti   t  mtgy?
+
+Clear text padded for 4 rows: is it time to go yet?XXX
+Encrypted with 4 rows: itmo ?s e yX t geXiitotX
+
+Clear text padded for 5 rows: is it time to go yet?XXXX
+Encrypted with 5 rows: i  o?stt X ioyXim eXtegtX
+
+Clear text padded for 6 rows: is it time to go yet?XXX
+Encrypted with 6 rows: itoesi t mg?ieoXt  X tyX
+
+Clear text padded for 7 rows: is it time to go yet?
+Encrypted with 7 rows: iigsmo e i ytte ott ?
+
+Clear text padded for 8 rows: is it time to go yet?XXX
+Encrypted with 8 rows: im sey  eittto?  XtgXioX
+
+Clear text padded for 9 rows: is it time to go yet?XXXXXX
+Encrypted with 9 rows: iees t t?ioXt X gXtoXi XmyX
+
+Clear text padded for 10 rows: is it time to go yet?XXXXXXXXX
+Encrypted with 10 rows: i ?stX oXi XtgX oXt XiyXmeXetX
+
+
+A demonstration of decrypting with a columnar transposition cipher:
+If the length of the message is not a multiple of the number of rows
+it will be padded which may throw off the decryption.
+
+Enter the message to decrypt: tsmxh paialms ep s liiee
+
+Messages Decrypted with a Columnar Transposition Cipher
+
+Decrypted text padded for 2 rows: tsmxh paialms ep s liiee
+Decrypted with 2 rows: tss mexph  sp aliiaileme
+
+Decrypted text padded for 3 rows: tsmxh paialms ep s liiee
+Decrypted with 3 rows: ti sasml xmlhsi  ipeeape
+
+Decrypted text padded for 4 rows: tsmxh paialms ep s liiee
+Decrypted with 4 rows: tps sa lmieixapihl e mse
+
+Decrypted text padded for 5 rows: tsmxh paialms ep s liieeX
+Decrypted with 5 rows: t lpispm imassexi  ehaelX
+
+Decrypted text padded for 6 rows: tsmxh paialms ep s liiee
+Decrypted with 6 rows: this is a simple example
+
+Decrypted text padded for 7 rows: tsmxh paialms ep s liieeXXXX
+Decrypted with 7 rows: this iXs a siXmple eXxampleX
+
+Decrypted text padded for 8 rows: tsmxh paialms ep s liiee
+Decrypted with 8 rows: txpasp ishal  lem imesie
+
+Decrypted text padded for 9 rows: tsmxh paialms ep s liieeXXX
+Decrypted with 9 rows: txpasp iXshal  leXm imesieX
+
+Decrypted text padded for 10 rows: tsmxh paialms ep s liieeXXXXXX
+Decrypted with 10 rows: txpasp iXXshal  leXXm imesieXX

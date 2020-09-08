@@ -1,0 +1,90 @@
+This program demonstrates a transposition cipher.
+A cipher is an algorithm to encrypt or decrypt a message.
+
+This program will demonstrate encrypting a message with
+a columnar transposition cipher both with and without
+padding characters. The program will then decrypt a message
+assuming it was encrypted with a columnar transposition cipher
+with padding.
+After accepting user input, the program displays some tests.
+
+
+A demonstration of encrypting with a columnar transposition cipher:
+
+Enter the message to encrypt: Hook 'em Horns! Go Texas! soccer and volleyball are great.
+
+Message encrypted with columnar transposition cipher and no padding.
+Encrypted with 2 rows: Ho e on!G ea!sce n olyalaegetok'mHrs oTxs ocradvlebl r ra.
+Encrypted with 3 rows: HkeHn  x!oea lyla e.o mosGTa crnvlblrgao' r!oessc doea ert
+Encrypted with 4 rows: H  nGe!c  laagto'Hsox cavelrr.oeo! asenoyleekmr Tsordlb  a
+Encrypted with 5 rows: H'o e edlleaoerGxsr el tomnoao vy g.k s scaobar H!T!cnlare
+Encrypted with 6 rows: Hen !e yaeomsT rvbrao !es oaetkH xoall . oGacnllg'roscde r
+Encrypted with 7 rows: Hm!xcdyrto  ac be.oHGseva koo!rolg r   llr'nTsal eeseoneaa
+Encrypted with 8 rows: H G! latoHo aer.oo snyekrTodb  nec ag'sxcvlre!aeolem srl a
+Encrypted with 9 rows: HH o leooTcvlaoreco tknxela. sarlr'!s eee !ay mG nbg osdar
+Encrypted with 10 rows: Hoeeleorxre ona ygkssabr !!nae'  dlaeGs ltmoov .  coaHTclr
+
+Message encrypted with columnar transposition cipher and padding.
+
+Clear text padded for 2 rows: Hook 'em Horns! Go Texas! soccer and volleyball are great.
+Encrypted with 2 rows: Ho e on!G ea!sce n olyalaegetok'mHrs oTxs ocradvlebl r ra.
+
+Clear text padded for 3 rows: Hook 'em Horns! Go Texas! soccer and volleyball are great.XX
+Encrypted with 3 rows: HkeHn  x!oea lyla e.o mosGTa crnvlblrgaXo' r!oessc doea ertX
+
+Clear text padded for 4 rows: Hook 'em Horns! Go Texas! soccer and volleyball are great.XX
+Encrypted with 4 rows: H  nGe!c  laagto'Hsox cavelrr.oeo! asenoyleeXkmr Tsordlb  aX
+
+Clear text padded for 5 rows: Hook 'em Horns! Go Texas! soccer and volleyball are great.XX
+Encrypted with 5 rows: H'o e edlleaoerGxsr el tomnoao vy g.k s scaobarX H!T!cnlareX
+
+Clear text padded for 6 rows: Hook 'em Horns! Go Texas! soccer and volleyball are great.XX
+Encrypted with 6 rows: Hen !e yaeomsT rvbrao !es oaetkH xoall . oGacnllgX'roscde rX
+
+Clear text padded for 7 rows: Hook 'em Horns! Go Texas! soccer and volleyball are great.XXXXX
+Encrypted with 7 rows: Hm!xcdyrto  ac be.oHGseva Xkoo!rolgX r   llrX'nTsal eXeseoneaaX
+
+Clear text padded for 8 rows: Hook 'em Horns! Go Texas! soccer and volleyball are great.XXXXXX
+Encrypted with 8 rows: H G! latoHo aer.oo snyeXkrTodb X nec agX'sxcvlrXe!aeoleXm srl aX
+
+Clear text padded for 9 rows: Hook 'em Horns! Go Texas! soccer and volleyball are great.XXXXX
+Encrypted with 9 rows: HH o leooTcvlaoreco tknxela. sarlrX'!s eeXe !ay XmG nbgX osdarX
+
+Clear text padded for 10 rows: Hook 'em Horns! Go Texas! soccer and volleyball are great.XX
+Encrypted with 10 rows: Hoeeleorxre ona ygkssabr !!nae'  dlaeGs ltmoov .  coaXHTclrX
+
+
+A demonstration of decrypting with a columnar transposition cipher:
+If the length of the message is not a multiple of the number of rows
+it will be padded which may throw off the decryption.
+
+Enter the message to decrypt: W steCHrhttoeSakah  d3r!tews 1dX  aui2 Xibycn?wXse c  oX
+
+Messages Decrypted with a Columnar Transposition Cipher
+
+Decrypted text padded for 2 rows: W steCHrhttoeSakah  d3r!tews 1dX  aui2 Xibycn?wXse c  oX
+Decrypted with 2 rows: W  1sdtXe C Haruhit2t oXeiSbaykcanh? w Xds3er !ct e wosX
+
+Decrypted text padded for 3 rows: W steCHrhttoeSakah  d3r!tews 1dX  aui2 Xibycn?wXse c  oXX
+Decrypted with 3 rows: W   dXs3itrbe!yCtcHenrw?hswt Xt1sodeeX S ca  ka auohiX 2X
+
+Decrypted text padded for 4 rows: W steCHrhttoeSakah  d3r!tews 1dX  aui2 Xibycn?wXse c  oX
+Decrypted with 4 rows: Wa y k1csadnthX?e  wC  XHdasr3uehri t!2ctt  oeX ewioSsbX
+
+Decrypted text padded for 5 rows: W steCHrhttoeSakah  d3r!tews 1dX  aui2 Xibycn?wXse c  oXXXXX
+Decrypted with 5 rows: Wetis Se2esaw  tksXcea i Ch1b H dyor XcXhd nXt3 ?XtrawXo!uXX
+
+Decrypted text padded for 6 rows: W steCHrhttoeSakah  d3r!tews 1dX  aui2 Xibycn?wXse c  oXXXXX
+Decrypted with 6 rows: Wtddi  o3Xbcser y tS! c eatanoCkeu?XHawiwXrhs2XXh   sXt 1XeX
+
+Decrypted text padded for 7 rows: W steCHrhttoeSakah  d3r!tews 1dX  aui2 Xibycn?wXse c  oX
+Decrypted with 7 rows: What is the best way to succeed in CS312? Hard work!XXXX
+
+Decrypted text padded for 8 rows: W steCHrhttoeSakah  d3r!tews 1dX  aui2 Xibycn?wXse c  oX
+Decrypted with 8 rows: Wra3 uye hkr1ic sta!d2nctthtX ? eo e Xw Ce w iXoHSdsabsX
+
+Decrypted text padded for 9 rows: W steCHrhttoeSakah  d3r!tews 1dX  aui2 Xibycn?wXse c  oXXXXXXXX
+Decrypted with 9 rows: Wra3 uyeX hkr1ic Xsta!d2ncXtthtX ? Xeo e Xw XCe w iXoXHSdsabsXX
+
+Decrypted text padded for 10 rows: W steCHrhttoeSakah  d3r!tews 1dX  aui2 Xibycn?wXse c  oXXXXX
+Decrypted with 10 rows: WHe tdiyso rS eX2ceXshadw  n Xttk3s X?cXetar aiw XCoh!1ubX X
