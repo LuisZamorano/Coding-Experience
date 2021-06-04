@@ -1,5 +1,5 @@
 
-#  File: htmlChecker.py
+#  File: sumMaze.py
 #  Description: A program that allows us to solve mazes using recursive depth-first search
 #  Student's Name: Luis Zamorano    
 #  Student's UT EID: ljz238
