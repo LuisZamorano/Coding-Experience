@@ -1,2 +1,2 @@
 # Python-Programming
-Python University Class
+Python University Class CS Fall '17
